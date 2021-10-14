@@ -11,7 +11,7 @@ namespace sigma_7_1
         private List<string> _words;
         private Dictionary<string, string> _dictionary = new Dictionary<string, string>();
 
-        public Translator(string filename)
+        public Translator(string filename = "data.txt")
         {
             try
             {
