@@ -24,11 +24,13 @@ namespace sigma_7_1
             catch(FileNotFoundException)
             {
                 Console.WriteLine("File was not found");
+                Console.Read();
                 Environment.Exit(-1);
             }
             catch(OutOfMemoryException)
             {
                 Console.WriteLine("Text is too large");
+                Console.Read();
                 Environment.Exit(-1);
             }
 
