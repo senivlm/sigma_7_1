@@ -12,7 +12,7 @@ namespace sigma_7_1
         private Dictionary<string, string> _dictionary = new Dictionary<string, string>();
 
         public Translator(string filename = "data.txt")
-        {
+        { краще описувати окремий метод зчитування з файлу і його викликати в конструкторі. Більша гнучкість
             try
             {
                 using(StreamReader sr = new StreamReader(filename))
@@ -47,7 +47,7 @@ namespace sigma_7_1
             try
             {
                 foreach (string word in _words)
-                {
+                {Треба цикл, поки не буде введене слово
                     if(!_dictionary.ContainsKey(word))
                     {
                         Console.WriteLine($"\"{word}\" wasn't found in dictionary.\n" +
